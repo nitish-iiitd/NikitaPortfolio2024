@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Example</title>
+    <script src="https://nitish-iiitd.github.io/PersonaJS/persona.js"></script>
+    <link href="https://nitish-iiitd.github.io/PersonaJS/persona.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <div id="persona"></div>
+</div>
+<script>
+    const data = {
+        name: "Nikita Sethi",
+        title: "Environmentalist",
+        about_me: "Aim to do quality research in the field of Biodiversity and Conservation and contribute to the Sustainable development of society.",
+        profile_pic: "NikitaSethi.png",
+        email : "nikitasethi95@gmail.com",
+        phone : "+91-9560309660",
+        experience : [
+            {
+                "organization_name" : "Solidaridad Regional Expertise Center , Delhi",
+                "organization_logo" : "https://seekvectorlogo.net/wp-content/uploads/2020/04/solidaridad-network-vector-logo.png",
+                "experience_type" : "Professional",
+                "work_duration" : "Jul'23 – Present",
+                "role" : "Program Associate- Dairy and Sugarcane",
+                "supervisor" : "",
+                "work_description" : ""
+            },
+            {
+                "organization_name" : "Indian Institute of Technology, Delhi",
+                "organization_logo" : "https://media.assettype.com/digitalterminal%2F2024-04%2Fab667853-6a93-4e95-994f-333a9970eeef%2FLogo___IIT_Delhi.jpg",
+                "experience_type" : "Professional",
+                "work_duration" : "Sep'22 – Jun'23",
+                "role" : "Junior Research Fellow",
+                "supervisor" : "",
+                "work_description" : ""
+            },
+            {
+                "organization_name" : "Poornima University, Jaipur",
+                "organization_logo" : "https://singheducation.co.in/images/CollegeImages/079613poornima.png",
+                "experience_type" : "Professional",
+                "work_duration" : "Feb'21 – Feb'22",
+                "role" : "Teaching Assistant",
+                "supervisor" : "",
+                "work_description" : ""
+            },
+            {
+                "organization_name" : "GGSIPU, New Delhi",
+                "organization_logo" : "https://d2lk14jtvqry1q.cloudfront.net/media/large_Guru_Gobind_Singh_Indraprastha_University_Delhi_GGSIPU_Delhi_6efb53ff2d_3a5956657d.png",
+                "experience_type" : "Professional",
+                "work_duration" : "Jan'18 – Jul'18",
+                "role" : "Researcher",
+                "supervisor" : "",
+                "work_description" : "Ecological role of squirrels in urban Delhi"
+            },
+            {
+                "organization_name" : "FRLHT, TDU, Bengaluru",
+                "organization_logo" : "https://static.wixstatic.com/media/e9256b_62de9273c73c4ae0a385a3584966d781~mv2.png/v1/fill/w_180,h_110,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9256b_62de9273c73c4ae0a385a3584966d781~mv2.png",
+                "experience_type" : "Professional",
+                "work_duration" : "Jun'17 – Aug'17",
+                "role" : "Researcher",
+                "supervisor" : "",
+                "work_description" : "Documentation of the Medicinal plants. And Palynotaxonomic study of five species of genus Jatropha (Family Euphorbiaceae)"
+            }
+        ],
+        skills : [
+            {
+                "skill_name" : "MS Word",
+                "logo_image" : "<i class='bi bi-file-word'></i>"
+            },
+            {
+                "skill_name" : "MS Excel",
+                "logo_image" : "<i class='bi bi-file-spreadsheet'></i>"
+            },
+            {
+                "skill_name" : "MS Powerpoint",
+                "logo_image" : "<i class='bi bi-filetype-ppt'></i>"
+            }
+        ],
+        education : [
+            {
+                "institute_logo" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9GNTFenU_T9caTwA63o86iaVHMnf9eeEPw&s",
+                "institute" : "Guru Gobind Singh Indraprastha University, New Delhi",
+                "degree" : "M.Sc. Biodiversity and Conservation",
+                "score_type" : "Percentage",
+                "score_value" : "86",
+                "duration" : "2016-2018"
+            },
+            {
+                "institute_logo" : "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/bsjlinuoxrh0q9njumun",
+                "institute" : "University of Delhi, New Delhi",
+                "degree" : "B.Sc (Hons.) Botany",
+                "score_type" : "Percentage",
+                "score_value" : "81",
+                "duration" : "2012-2016"
+            },
+            {
+                "institute_logo" : "https://yt3.googleusercontent.com/NR-20E9E9XZr2BlVlWMxydT9U7ZxqFv_3NpKA3Jvv7ZADFf6PuUWh-JOYSKBsB_JFfGB9GgZvyw=s900-c-k-c0x00ffffff-no-rj",
+                "institute" : "Sanatan Dharam Public School, New Delhi",
+                "degree" : "Class 12th",
+                "score_type" : "Percentage",
+                "score_value" : "83.80",
+                "duration" : "2011-2012"
+            },
+            {
+                "institute_logo" : "https://yt3.googleusercontent.com/NR-20E9E9XZr2BlVlWMxydT9U7ZxqFv_3NpKA3Jvv7ZADFf6PuUWh-JOYSKBsB_JFfGB9GgZvyw=s900-c-k-c0x00ffffff-no-rj",
+                "institute" : "Sanatan Dharam Public School, New Delhi",
+                "degree" : "Class 10th",
+                "score_type" : "Percentage",
+                "score_value" : "80.00",
+                "duration" : "2009-2010"
+            }
+        ],
+        interests : [
+            "Climate Change Adaptation and Mitigation",
+            "Livelihood development and Social Impact Assessment",
+            "Natural Resource Management",
+            "Community and Natural resource Management"
+        ],
+        publications : [
+            "Scientific paper published in the Journal of Phytological Research. ISSN 0970-5767.Titled Light Microscopic study of pollen morphology on selected species of Jatropha L."
+        ],
+        trainings : [
+            "Visited Nainital, Uttarakhand in the academic session 2016-2017. For the study and identification of the local flora and fauna, collection of various gymnosperms and bryophytes found in that region and the compilation of herbarium of the collection.",
+            "Visited Asan Barrage Dehradun in the academic year 2016-2017 for the study and identification of migratory and resident birds of Asian-Australasian flyway",
+            "Attended and also participated as a volunteer in the “Land and Development Conference 2018” organised at the India International Centre, New Delhi from 19-21 February, 2018.",
+            "Attended” World conference on Environment: Paris Agreement 2015, Wildlife and Biodiversity, Municipal Solid Waste, Innovative approaches for Environmental Remediation and Restoration, Climate Change, Resource Conservation and Sustainability Strategies” at Vigyan Bhawan, New Delhi on 25-26 March 2017.",
+            "Attended” First National Conference on Environment: Climate Change, Resource Conservation and Sustainability Strategies” (CCRCASS-2017) GGSIPU, March 16-17, 2017.",
+            "Attended “Second National Symposium on Environment: Greener Future and Awareness” organized by Department of Zoology, Deshbandhu College, University of Delhi, 19 march 2016."
+        ]
+    };
+
+    PersonaJS.addIntro(data.name, data.title, data.about_me, data.profile_pic);
+    PersonaJS.addContact(data.phone, data.email);
+    PersonaJS.addExperience(data.experience);
+    PersonaJS.addSkills(data.skills);
+    PersonaJS.addEducation(data.education);
+    PersonaJS.addInterest(data.interests);
+    PersonaJS.addPublication(data.publications);
+    PersonaJS.addTraining(data.trainings);
+    PersonaJS.addFooter(data.name);
+    PersonaJS.render();
+</script>
+</body>
+</html>
